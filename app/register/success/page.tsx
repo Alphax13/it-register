@@ -64,7 +64,7 @@ export default function RegisterSuccessPage() {
           transition={{ delay: 0.4 }}
           className="mt-6 text-3xl font-black text-white"
         >
-          สมัครสมาชิกสำเร็จ!
+          ลงทะเบียนสำเร็จ!
         </motion.h1>
 
         <motion.p

@@ -116,7 +116,7 @@ export function RegisterForm() {
         return "ข้อมูลซ้ำในระบบ (รหัสนักศึกษา หรือ อีเมล ถูกใช้งานแล้ว)";
       }
     }
-    return getErrorMessage(error, "สมัครสมาชิกไม่สำเร็จ");
+    return getErrorMessage(error, "ลงทะเบียนไม่สำเร็จ");
   }
 
   async function onSubmit(data: z.output<typeof registerSchema>) {
@@ -614,7 +614,7 @@ export function RegisterForm() {
             disabled={isSubmitting || isAvailabilityBlocked}
             className="h-12 w-full rounded-2xl bg-orange-500 text-base font-bold text-white shadow-lg shadow-orange-500/30 hover:bg-orange-400 disabled:opacity-60"
           >
-            สมัครสมาชิก
+            ลงทะเบียน
           </Button>
         </motion.div>
       </form>

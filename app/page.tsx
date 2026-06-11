@@ -57,7 +57,7 @@ export default function Home() {
               className="text-center"
             >
               <h1 className="text-3xl font-black tracking-tight text-white sm:text-4xl lg:text-5xl">
-                สมัครสมาชิก<span className="text-orange-400">นักศึกษา</span>
+                ลงทะเบียน<span className="text-orange-400">นักศึกษา</span>
               </h1>
               <p className="mx-auto mt-2 max-w-xl text-sm text-zinc-400 sm:mt-3 sm:text-base">
                 กรอกข้อมูลเพื่อสมัครเข้าใช้งานระบบสารสนเทศ ITPSRU
@@ -72,7 +72,7 @@ export default function Home() {
                 Registration Form
               </p>
               <h2 className="mt-1 text-lg font-bold text-white sm:text-xl">
-                ข้อมูลสำหรับสมัครสมาชิก
+                ข้อมูลสำหรับลงทะเบียน
               </h2>
             </div>
 
