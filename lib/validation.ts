@@ -65,11 +65,11 @@ export const registerSchema = z
       .max(500, "ที่อยู่ต้องไม่เกิน 500 ตัวอักษร"),
     previousSchool: z.string().min(1, "กรุณากรอกสถานศึกษาเดิม"),
     qualification: z.enum(["ม.6", "ปวช.", "ปวส."] as const, {
-      errorMap: () => ({ message: "กรุณาเลือกคุณวุฒิ" }),
+      message: "กรุณาเลือกคุณวุฒิ",
     }),
     studyPlan: z.string().min(1, "กรุณากรอกแผนการเรียน"),
     curriculum: z.enum(["REGULAR", "TRANSFER"] as const, {
-      errorMap: () => ({ message: "กรุณาเลือกหลักสูตร" }),
+      message: "กรุณาเลือกหลักสูตร",
     }),
     guardianName: z
       .string()
