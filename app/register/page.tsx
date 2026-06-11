@@ -1,1 +1,6 @@
-export default function Register(){return <main className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-700 via-indigo-700 to-cyan-500"><div className="backdrop-blur-xl bg-white/10 p-8 rounded-2xl text-white"><h1 className="text-3xl font-bold">Student Register</h1><p>Scaffold project</p></div></main>}
+import { redirect } from "next/navigation";
+
+export default function RegisterPage() {
+  redirect("/");
+}
+
