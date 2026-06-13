@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 import { useForm, Controller, useWatch } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion } from "framer-motion";
@@ -34,7 +33,6 @@ const textareaClassName =
   "w-full min-h-[88px] resize-none rounded-xl border border-white/20 bg-white/10 px-3 py-2.5 text-sm text-white placeholder:text-orange-200/50 focus-visible:border-orange-400/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400/20 dark:bg-white/5";
 
 export function RegisterForm() {
-  const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccessModalOpen, setIsSuccessModalOpen] = useState(false);
   const [successInfo, setSuccessInfo] = useState<{
@@ -189,7 +187,7 @@ export function RegisterForm() {
 
   function goToSuccessPage() {
     setIsSuccessModalOpen(false);
-    router.push("/register/success");
+    window.location.href = "https://it.psru.ac.th/";
   }
 
   return (
